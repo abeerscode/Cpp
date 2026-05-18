@@ -39,6 +39,5 @@ int main(){
     }
     else{
         cout << temp << " is not a Armstrong Number";
-
     }
 }
