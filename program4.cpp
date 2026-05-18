@@ -1,43 +1,21 @@
-// Armstrong number
-// 153 ---> has 3 digit. Power = 3. 
-// 1^3 + 5^3 + 3^3 = 153 Armstrong number.
+// Swap number with third variable
 
 #include<iostream>
-#include<cmath>
 using namespace std;
 
 int main(){
-    int num;
+    int num1, num2, temp;
 
-    cout << "Enter a number: ";
-    cin >> num;
+    cout << "Enter number-1: ";
+    cin >> num1;
 
-    int temp = num;
-    int count = 0;
+    cout << "Enter number-2: ";
+    cin >> num2;
 
-    while(num != 0){
-        count++;
-        num /= 10;
-    }
+    temp = num1;
+    num1 = num2;
+    num2 = temp;
 
-    num = temp;
-    int sum = 1;
-
-    while(num != 0){
-        int digit = num % 10;
-        int power = 1;
-
-        for(int i=0; i<count; i++){
-            power *= digit;
-        }
-        sum += power;
-        num /= 10;
-    }
-
-    if(sum == temp){
-        cout << temp << " is a Armstrong Number";
-    }
-    else{
-        cout << temp << " is not a Armstrong Number";
-    }
+    cout << "Number - 1 : " << num1;
+    cout << "\nNumber - 2 : " << num2;
 }
