@@ -6,24 +6,27 @@
 using namespace std;
 
 int main(){
-    int num = 145;
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
     int temp = num;
     int sum = 0;
-    int product = 1;
+    
     while(num != 0){
         int digit = num % 10;
+        int factorial = 1;
         for(int i=digit ; i>0 ; i--){
-            product = product * i;
+            factorial *= i;
         }
-        sum = sum + product;
-        num = num / 10;
+        sum += factorial;
+        num /= 10;
     }
-    cout << sum;
-    /*if(sum == temp){
-        cout << temp << " is a Armstrong Number.";
+    if(sum == temp){
+        cout << temp << " is a Strong Number.";
     }
     else{
-        cout << temp << " is not a Armstrong Number.";
-    }*/
-    
+        cout << temp << " is not a Strong Number.";
+    }   
 }
