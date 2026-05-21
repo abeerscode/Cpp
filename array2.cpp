@@ -1,4 +1,4 @@
-// Sum of Matrix
+// Sum of the element of a Matrix
 
 #include<iostream>
 using namespace std;
