@@ -1,4 +1,4 @@
-// Matrix 3x3
+// Pattern 3x3
 
 #include<iostream>
 using namespace std;
