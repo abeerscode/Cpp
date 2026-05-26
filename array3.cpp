@@ -1,4 +1,4 @@
-// Max element of a matrix
+// Max / Min element of a matrix
 
 #include<iostream>
 using namespace std;
@@ -21,16 +21,21 @@ int main(){
     }
 
     int max = arr[0][0];
+    int min = arr[0][0];
 
     for(int i=0; i<row; i++){
         for(int j=0; j<col; j++){
             if(arr[i][j] > max){
                 max = arr[i][j];
             }
+            if(arr[i][j] < min){
+                min = arr[i][j];
+            }
         }
     }
 
-    cout << "Max element of the matrix: " << max;
+    cout << "Max element : " << max << endl;
+    cout << "Min element : " << min;
 
     return 0;
 }
