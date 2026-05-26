@@ -1,4 +1,4 @@
-// Sum of the diagonal of 2D arraay
+// Sum of the Diagonals of 2D Matrix
 
 #include<iostream>
 using namespace std;
