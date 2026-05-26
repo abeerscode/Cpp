@@ -1,10 +1,11 @@
-// Sum of the diagonal of 2D arraay
+// Search element in a 2D Matrix
 
 #include<iostream>
 using namespace std;
 
 int main(){
-    int row, col;
+    int row, col, num;
+    bool found = false;
 
     cout << "Enter row number: ";
     cin >> row;
@@ -21,29 +22,28 @@ int main(){
         }
     }
 
-    int sum1 = 0;
+    cout << "Search a number: ";
+    cin >> num;
 
     for(int i=0; i<row; i++){
         for(int j=0; j<col; j++){
-            if(i == j){
-                sum1 += arr[i][j];
+            if(arr[i][j] == num){
+                found = true;
+                break;
             }
+        }
+
+        if(found){
+            break;
         }
     }
 
-    cout << "Sum of Diagonal - 1 : " << sum1 << endl;
-
-    int sum2 = 0;
-
-    for(int i=0; i<row; i++){
-        for(int j=0; j<col; j++){
-            if(i + j == row - 1){
-                sum2 += arr[i][j];
-            }
-        }
+    if(found){
+        cout << "Found";
     }
-
-    cout << "Sum of Diagonal - 2 : " << sum2 << endl;
+    else{
+        cout << "Not Found";
+    }
 
     return 0;
 }
