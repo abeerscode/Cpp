@@ -18,14 +18,16 @@
 
 # Branch
 
-1. `git branch` --> Show all local branches
-2. `git branch -a` --> Show local and remote branches
-3. `git branch branchname` --> Create a new branch
-4. `git switch branchname` --> Switch to a branch
-5. `git switch -c branchname` --> Create and switch to a new branch
-6. `git push -u origin branchname` --> First push of a new branch
-7. `git push origin branchname` --> Push a specific branch
-8. `git push` --> Push current branch (after `-u` is set)
+1. git branch --> Show all local branches
+2. git branch -a --> Show local and remote branches
+3. git switch main --> Switch to main
+4. git pull origin main --> Get the latest main from GitHub
+5. git switch -c branchname --> Create and switch to a new branch
+6. git push -u origin branchname --> First push of a new branch
+7. git fetch origin --> Get latest branch information from GitHub
+8. git switch branchname --> Switch to an existing branch
+9. git push origin branchname --> Push a specific branch
+10. git push --> Push current branch (after -u is se
 
 # Delete Folder & File
 
