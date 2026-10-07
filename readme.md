@@ -9,25 +9,32 @@
 
 # Commit Push Pull
 
-1. `git remote -v` --> Check linked Repository
+1. `git remote -v` --> Check linked repository
 2. `git status` --> Check current branch and file status
 3. `git add .` --> Add changes
 4. `git commit -m "comments"` --> Commit changes
 5. `git push origin main` --> Push `main` branch
 6. `git pull` --> Get latest changes from GitHub
+7. `git pull --rebase origin branchname` --> Get remote changes and rebase local commits
+8. `git push origin branchname` --> Push changes to a specific branch
 
 # Branch
 
-1. git branch --> Show all local branches
-2. git branch -a --> Show local and remote branches
-3. git switch main --> Switch to main
-4. git pull origin main --> Get the latest main from GitHub
-5. git switch -c branchname --> Create and switch to a new branch
-6. git push -u origin branchname --> First push of a new branch
-7. git fetch origin --> Get latest branch information from GitHub
-8. git switch branchname --> Switch to an existing branch
-9. git push origin branchname --> Push a specific branch
-10. git push --> Push current branch (after -u is se
+1. `git branch` --> Show all local branches
+2. `git branch -a` --> Show local and remote branches
+3. `git switch main` --> Switch to `main`
+4. `git pull origin main` --> Get the latest `main` from GitHub
+5. `git switch -c branchname` --> Create and switch to a new branch
+6. `git push -u origin branchname` --> First push of a new branch
+7. `git fetch origin` --> Get latest branch information from GitHub
+8. `git switch branchname` --> Switch to an existing branch
+9. `git push origin branchname` --> Push a specific branch
+10. `git push` --> Push current branch after `-u` is set
+
+# Branch Conflict / Rebase Fix
+
+1. `git pull --rebase origin branchname` --> Get remote changes and rebase local commits
+2. `git push origin branchname` --> Push after successful rebase
 
 # Delete Folder & File
 
